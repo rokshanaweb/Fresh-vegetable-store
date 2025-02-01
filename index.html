@@ -33,25 +33,10 @@
     <div class="container mx-auto p-4">
     <div class="navbar justify-between">
       <div class="navbar">
-        <!-- <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </div>
-         
-        </div> -->
+       
        <div>
-        <img src="/c2-assets/Vector.jpg" alt="">
+        <img class="lg:hidden block" src="./c2-assets/mobail.svg" alt="">
+        <img class="lg:block hidden" src="./c2-assets/Vector.jpg" alt="">
        </div>
       </div>
       <div class="navbar hidden lg:flex">
@@ -73,9 +58,18 @@
         <button class="border border-green-500 text-[16px] py-2 px-5 rounded-lg mr-2">Login</button>
         <button class="bg-green-500 text-white rounded-lg py-2 px-5">Login</button>
         </div>
+
+       
+      </div>
+      <div class="lg:hidden block">
+        <button><img src="./c2-assets/bars-3.svg" alt=""></button>
       </div>
     </div>
+
     </div>
+
+     <!-- banner -->
+
     <div class="banner text-center mx-auto w-full lg:w-[850px]">
       <div>
         <h1 class="text-5xl lg:text-7xl font-medium mt-10  opacity-0 animate-fadeIn">Freshness <span class="text-green-500"> You Can
@@ -85,8 +79,11 @@
           </p>
       </div>
       <div>
-        <img class="w-full mt-5 opacity-0 animate-fadeIn" src="/c2-assets/hero-vegetables.png" alt="">
+        <img class="w-full mt-5 opacity-0 animate-fadeIn" src="./c2-assets/hero-vegetables.png" alt="">
       </div>
+
+      <!-- animation -->
+
       <style>
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
@@ -105,64 +102,71 @@
         </header>
 
   <!--main-->
+
   <main>
+
+    <!-- card section -->
           <section class="container mx-auto p-4 mt-16">
             <h2 class="text-3xl font-bold mb-5 text-green-500">Services</h2>
               <div class="flex gap-4 flex-col lg:flex-row">
                 <div class="shadow-lg bg-[#EFEBE3] flex flex-col justify-center items-center rounded-lg
                  text-center py-8 px-8">
-                  <img src="/c2-assets/service.png" alt="">
+                  <img src="./c2-assets/service.png" alt="">
                   <h2 class="text-[20px] font-medium mt-4 mb-4">opacity: 0.7;</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                 </div>
                 <div class="shadow-lg bg-[#EFEBE3] flex flex-col justify-center items-center rounded-lg
                 text-center py-8 px-8">
-                  <img src="/c2-assets/delivery.png" alt="">
+                  <img src="./c2-assets/delivery.png" alt="">
                   <h2 class="text-[20px] font-medium mt-4 mb-4">Fast Delivery</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                 </div>
                 <div class="shadow-lg bg-[#EFEBE3] flex flex-col justify-center items-center rounded-lg
                 text-center py-8 px-8">
                 
-                  <img src="/c2-assets/healthy.png" alt="">
+                  <img src="./c2-assets/healthy.png" alt="">
                   <h2 class="text-[20px] font-medium mt-4 mb-4">Healthy Products;</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                 </div>
               </div>
           </section>
 
+        <!-- more details section -->
 
-          <section class="container mx-auto p-4">
+          <section class="container mx-auto p-4 mt-16">
+            <h2 class="text-3xl font-bold mb-5 text-green-500">More Details</h2>
             <div class="collapse collapse-plus bg-[#EFEBE3]">
               <input type="radio" name="my-accordion-3" checked="checked" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-title text-xl font-medium">Wide Variety of Produce </div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p>Includes leafy greens (spinach, lettuce), root vegetables (carrots, potatoes), and seasonal items (pumpkins, mangoes).</p>
               </div>
             </div>
             <div class="collapse collapse-plus bg-[#EFEBE3]">
               <input type="radio" name="my-accordion-3" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-title text-xl font-medium">Farm-to-Table Approach </div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p> Many stores source vegetables directly from farms to ensure freshness.</p>
+              </div>
+            </div>  
+            <div class="collapse collapse-plus bg-[#EFEBE3]">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">Organic & Conventional Options </div>
+              <div class="collapse-content">
+                <p>Some stores offer organic vegetables free from pesticides.</p>
               </div>
             </div>
             <div class="collapse collapse-plus bg-[#EFEBE3]">
               <input type="radio" name="my-accordion-3" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-title text-xl font-medium">Local & Imported Selection</div>
               <div class="collapse-content">
-                <p>hello</p>
-              </div>
-            </div>
-            <div class="collapse collapse-plus bg-[#EFEBE3]">
-              <input type="radio" name="my-accordion-3" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-              <div class="collapse-content">
-                <p>hello</p>
+                <p> Depending on the region, some stores stock imported exotic vegetables.</p>
               </div>
             </div>
           </section>
 
+          <!-- service section -->
+ 
 
           <section class="w-full bg-[#EFEBE3] mt-16">
            
@@ -185,13 +189,13 @@
                             <div class="p-4 gap-4  flex bg-white shadow-md rounded-lg">
                              
                           <div class="bg-[#EFEBE3] rounded-lg flex justify-center">
-                          <img  src="/c2-assets/onion.png" alt="">
+                          <img  src="./c2-assets/onion.png" alt="">
                           </div>
                           <div>
                             <div class="flex gap-2">
                               <div>
             
-                            <img src="/c2-assets/fi_2107957.jpg" alt="">
+                            <img src="./c2-assets/fi_2107957.jpg" alt="">
                             </div>
                             
                             <span class="text-[16px]">4.2</span>
@@ -203,12 +207,12 @@
 
                           <div class="p-4 flex gap-4 bg-white shadow-md rounded-lg">
                             <div class="bg-[#EFEBE3] rounded-lg flex justify-center">
-                            <img src="/c2-assets/tomato.png" alt="">
+                            <img src="./c2-assets/tomato.png" alt="">
                             </div>
                             <div>
                               <div class="flex gap-2">
                                 <div>
-                              <img src="/c2-assets/fi_2107957.jpg" alt="">
+                              <img src="./c2-assets/fi_2107957.jpg" alt="">
                               </div>
                               <span>4.2</span>
                             </div>
@@ -219,12 +223,12 @@
                             
                             <div class="p-4 gap-4 flex bg-white shadow-md rounded-lg">
                               <div class="bg-[#EFEBE3] rounded-lg flex justify-center">
-                              <img src="/c2-assets/potato.png" alt="">
+                              <img src="./c2-assets/potato.png" alt="">
                               </div>
                               <div>
                                 <div class="flex gap-2">
                                   <div>
-                                <img src="/c2-assets/fi_2107957.jpg" alt="">
+                                <img src="./c2-assets/fi_2107957.jpg" alt="">
                                 </div>
                                 <span>4.2</span>
                               </div>
@@ -236,12 +240,12 @@
                               <div class="p-4 gap-4 flex bg-white shadow-md rounded-lg">
                              
                                 <div class="bg-[#EFEBE3] rounded-lg flex justify-center">
-                                <img src="/c2-assets/tomato.png" alt="">
+                                <img src="./c2-assets/tomato.png" alt="">
                                 </div>
                                 <div>
                                   <div class="flex gap-2">
                                     <div>
-                                  <img src="/c2-assets/fi_2107957.jpg" alt="">
+                                  <img src="./c2-assets/fi_2107957.jpg" alt="">
                                   </div>
                                   <span>4.2</span>
                                 </div>
@@ -252,12 +256,12 @@
 
                                    <div class="p-4 gap-4 flex bg-white shadow-md rounded-lg">
                                   <div class="bg-[#EFEBE3] rounded-lg flex justify-center">
-                                  <img src="/c2-assets/onion.png" alt="">
+                                  <img src="./c2-assets/onion.png" alt="">
                                   </div>
                                   <div>
                                     <div class="flex gap-2">
                                       <div>
-                                    <img src="/c2-assets/fi_2107957.jpg" alt="">
+                                    <img src="./c2-assets/fi_2107957.jpg" alt="">
                                     </div>
                                     <span>4.2</span>
                                   </div>
@@ -268,12 +272,12 @@
 
                         <div class="p-4 gap-4 flex bg-white shadow-md rounded-lg">
                           <div class="bg-[#EFEBE3] rounded-lg flex justify-center">
-                          <img src="/c2-assets/tomato.png" alt="">
+                          <img src="./c2-assets/tomato.png" alt="">
                           </div>
                           <div>
                             <div class="flex gap-2">
                               <div>
-                            <img src="/c2-assets/fi_2107957.jpg" alt="">
+                            <img src="./c2-assets/fi_2107957.jpg" alt="">
                             </div>
                             <span>4.2</span>
                           </div>
@@ -284,12 +288,12 @@
 
                 <div class="p-4 gap-4 flex bg-white shadow-md rounded-lg">
                   <div class="bg-[#EFEBE3] rounded-lg flex justify-center">
-                  <img src="/c2-assets/onion.png" alt="">
+                  <img src="./c2-assets/onion.png" alt="">
                   </div>
                   <div>
                     <div class="flex gap-2">
                       <div>
-                    <img src="/c2-assets/fi_2107957.jpg" alt="">
+                    <img src="./c2-assets/fi_2107957.jpg" alt="">
                     </div>
                     <span>4.2</span>
                   </div>
@@ -300,12 +304,12 @@
 
         <div class=" p-4 gap-4 flex bg-white shadow-md rounded-lg">
           <div class="bg-[#EFEBE3] rounded-lg flex justify-center">
-          <img src="/c2-assets/potato.png" alt="">
+          <img src="./c2-assets/potato.png" alt="">
           </div>
           <div>
             <div class="flex gap-2">
               <div>
-            <img src="/c2-assets/fi_2107957.jpg" alt="">
+            <img src="./c2-assets/fi_2107957.jpg" alt="">
             </div>
             <span>4.2</span>
           </div>
@@ -316,12 +320,12 @@
 
 <div class="p-4 gap-4 flex bg-white shadow-md rounded-lg">
   <div class="bg-[#EFEBE3] rounded-lg flex justify-center">
-  <img src="/c2-assets/potato.png" alt="">
+  <img src="./c2-assets/potato.png" alt="">
   </div>
   <div>
     <div class="flex gap-2">
       <div>
-    <img src="/c2-assets/fi_2107957.jpg" alt="">
+    <img src="./c2-assets/fi_2107957.jpg" alt="">
     </div>
     <span>4.2</span>
   </div>
@@ -339,18 +343,21 @@
           </section>
 
 
+           <!-- offer section -->
+
           <section class="container mx-auto p-4 mt-16">
+            <h2 class="text-3xl font-bold mb-5 text-green-500">Arrival & Offers</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <div class="bg-[#115414] flex justify-between  lg:col-span-2  rounded-lg">
               <div class="p-6">
-             <img class="mt-4" src="/c2-assets/dawat-logo.png" alt="">
+             <img class="mt-4" src="./c2-assets/dawat-logo.png" alt="">
              <p class="text-center text-[#fff]  text-[20px]
              px-8 py-4 rounded-lg bg-[#63B76D;] mt-4">Cook Exotic Dishes</p>
              <h1 class="text-[35px] text-center text-[#fff] mt-4">UP to 
               <span class="font-bold">20% OFF</span></h1>
              </div>
              <div class="mt-6">
-              <img src="/c2-assets/dawat-mock-up.png" alt="">
+              <img src="./c2-assets/dawat-mock-up.png" alt="">
              </div>
             </div>
 
@@ -359,26 +366,66 @@
 
             <div class="bg-[#102861] flex justify-between lg:col-span-1  rounded-lg">
               <div class="p-6">
-             <img class="mt-4" src="/c2-assets/india-gate-logo.png" alt="">
+             <img class="mt-4" src="./c2-assets/india-gate-logo.png" alt="">
              <p class="text-center text-[#fff]  text-[20px]
              px-8 py-4 rounded-lg bg-[#2A4D97] mt-4">World’s No.1 Rice</p>
              <h1 class="text-[35px] text-center text-[#fff] mt-4">UP to 
               <span class="font-bold">20% OFF</span></h1>
              </div>
              <div class="mt-6">
-              <img src="/c2-assets/india-gate-mock-up.png" alt="">
+              <img src="./c2-assets/india-gate-mock-up.png" alt="">
              </div>
             </div>
                
             </div>
             
           </section>
+
+           <div class="md:h-[380px]  h-[350px]">
+
+        </div>
+
   </main>
 
   <!--footer-->
-  <footer>
 
-  </footer>
+  <footer class="bg-[#179800] lg:pb-[140px] pb-[48px]">
+    <div class="container px-4 mx-auto">
+        <div class="p-[55px] rounded-[24px] bg-[#EFEBE3] flex items-center md:flex-row flex-col  lg:gap-[129px] gap-6 translate-y-[-50%]">
+            <div>
+                <img src="./c2-assets//vegetable-busket.png" alt="">
+            </div>
+            <div class="flex flex-col md:items-start items-center">
+                <h3 class="lg:text-[#111] text-[#179800] lg:text-[2.25rem] text-[1.125rem] md:text-left  text-center  font-semibold">Get Grocery News!</h3>
+                <p class="lg:text-[1.125rem] text-[1rem]  text-[#111] lg:mt-[22px] mt-3 md:text-left  text-center">Exclusive training tips, ticks, product deals and more.</p>
+               <div class="w-full">
+                <input class="lg:p-[18px] p-2 outline-none text-[1rem] text-[#C4C4C4] rounded-[8px] bg-[#FFF] w-full lg:mt-[38px] mt-5" type="text" name="" id="" placeholder="Enter email...">
+               </div>
+                <button class="lg:px-[30px] lg:py-[10px] px-6 py-2 bg-[#179800] rounded-[8px] text-[#FFF] lg:text-[1.125rem] text-[14px] lg:mt-[38px] mt-5">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 lg:gap-[158px] md:gap-[58px] gap-[36px] md:translate-y-0">
+          <div>
+                <img src="./c2-assets/logo-footer.png" alt="">
+                <p class="text-[#ffffffb3] lg:text-[1.125rem] font-normal">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+          </div>
+          
+          <div class="flex flex-col gap-8 text-[#EFEBE3] lg:text-[1.125rem]">
+            <a class="hover:underline" href="">Product</a>
+            <a class="hover:underline" href="">Services</a>
+            <a class="hover:underline" href="">Contact us</a>
+          </div>
+
+          <div class="flex flex-col gap-2 justify-end">
+            <h5 class="text-[#EFEBE3] lg:text-[1rem] text-[14px] font-medium">Follow Us</h5>
+            <img class="w-[50%]" src="./c2-assets/social.svg" alt="">
+          </div>
+        </div>
+    </div>
+</footer>
+ 
+  
   
 </body>
 </html>
