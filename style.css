@@ -1,0 +1,5 @@
+.products-bg {
+    background: url('./c2-assets/vegetable-offer.png'), linear-gradient(to bottom right, #4fd837, #d6f5d6);
+    background-repeat: no-repeat;
+    background-position:bottom right;
+}
